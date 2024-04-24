@@ -13,3 +13,10 @@ jobs:
     steps:
       - name: Greet the User
         run: echo "Hello world!"
+      - name: Show directory before checkout
+        run: ls -1
+      - name: Checkout our code
+        uses: actions/checkout@v2
+      - name: Show directory after checkout
+        run: ls -1
+      
